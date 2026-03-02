@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autoservis Pelhřimov — Jan Daňhel — Opravy automobilů</title>
-    <meta name="description" content="Autoservis Pelhřimov — Jan Daňhel — Opravy automobilů. Profesionální služby pro vaše podnikání.">
+    <title>Autoservis Pelhřimov — Jan Daňhel | Rychloservis a&nbsp;opravy všech značek</title>
+    <meta name="description" content="Autoservis Pelhřimov — Jan Daňhel. Rychloservis na počkání, pneuservis, geometrie kol, karosářské práce, příprava na STK. Opravujeme všechny značky od roku 2013.">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Autoservis Pelhřimov — Jan Daňhel">
-    <meta property="og:description" content="Opravy automobilů">
+    <meta property="og:description" content="Rychloservis na počkání, pneuservis, geometrie kol, karosářské práce, příprava na STK. Opravujeme všechny značky.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://https://wz-demo-autoservis-pelhrimov-jan-danhe.netlify.app">
-    <meta property="og:image" content="https://https://wz-demo-autoservis-pelhrimov-jan-danhe.netlify.app/img/og-image.png">
+    <meta property="og:url" content="https://wz-demo-autoservis-pelhrimov-jan-danhe.netlify.app">
     <meta property="og:locale" content="cs_CZ">
     <meta property="og:site_name" content="Autoservis Pelhřimov — Jan Daňhel">
 
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://https://wz-demo-autoservis-pelhrimov-jan-danhe.netlify.app/">
+    <link rel="canonical" href="https://wz-demo-autoservis-pelhrimov-jan-danhe.netlify.app/">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -35,19 +34,36 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": "AutoRepair",
         "name": "Autoservis Pelhřimov — Jan Daňhel",
-        "description": "Opravy automobilů",
-        "url": "https://https://wz-demo-autoservis-pelhrimov-jan-danhe.netlify.app",
+        "description": "Rychloservis na počkání, pneuservis, geometrie kol, karosářské práce, příprava na STK. Opravujeme všechny značky od roku 2013.",
+        "url": "https://wz-demo-autoservis-pelhrimov-jan-danhe.netlify.app",
         "telephone": "+420 606 389 116",
         "email": "autoservispelhrimov@seznam.cz",
-        "image": "https://https://wz-demo-autoservis-pelhrimov-jan-danhe.netlify.app/img/og-image.png",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "{{CONTACT_ADDRESS}}",
-            "addressLocality": "{{CONTACT_CITY}}",
-            "postalCode": "{{CONTACT_ZIP}}",
+            "streetAddress": "Nádražní 652",
+            "addressLocality": "Pelhřimov",
+            "postalCode": "393 01",
             "addressCountry": "CZ"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 49.4316,
+            "longitude": 15.2233
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+                "opens": "07:00",
+                "closes": "15:30"
+            }
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.2",
+            "reviewCount": "66"
         }
     }
     </script>
@@ -58,12 +74,14 @@
     <!-- ═══ NAVBAR ═══ -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="#" class="nav-logo">Autoservis Pelhřimov — Jan Daňhel</a>
+            <a href="#" class="nav-logo">
+                <img src="img/logo.png" alt="Autoservis Pelhřimov" class="nav-logo-img" width="180" height="40">
+            </a>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="#o-nas" class="nav-link">O nás</a></li>
+                <li><a href="#o-nas" class="nav-link">O&nbsp;nás</a></li>
                 <li><a href="#sluzby" class="nav-link">Služby</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#galerie" class="nav-link">Galerie</a></li>
+                <li><a href="#recenze" class="nav-link">Recenze</a></li>
                 <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
             </ul>
             <div class="nav-actions">
@@ -79,14 +97,17 @@
     </nav>
 
     <!-- ═══ HERO ═══ -->
-    <section class="hero " id="hero" style="">
+    <section class="hero hero-photo" id="hero" style="--hero-image: url('img/hero-workshop.jpg'); --hero-opacity: 0.35;">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Autoservis Pelhřimov — Jan Daňhel</h1>
-                <p class="hero-subtitle">Opravy automobilů</p>
-                <p class="hero-text">Poskytujeme profesionální služby s důrazem na kvalitu a spokojenost zákazníků. Rádi vám pomůžeme s vašimi potřebami.</p>
+                <h1 class="hero-title">Váš spolehlivý autoservis v&nbsp;Pelhřimově</h1>
+                <p class="hero-subtitle">Rychloservis · Všechny značky · Od roku 2013</p>
+                <p class="hero-text">Jediný rychloservis v&nbsp;Pelhřimově — většinu služeb provádíme na počkání. Opravujeme rodinná auta, firemní vozy, nákladní dopravu i&nbsp;motocykly.</p>
                 <div class="hero-cta">
-                    <a href="#kontakt" class="btn btn-primary">Kontaktujte nás</a>
+                    <a href="tel:+420606389116" class="btn btn-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        Zavolat: 606&nbsp;389&nbsp;116
+                    </a>
                     <a href="#sluzby" class="btn btn-outline">Naše služby</a>
                 </div>
             </div>
@@ -96,29 +117,29 @@
     <!-- ═══ O NÁS ═══ -->
     <section class="section" id="o-nas">
         <div class="container">
-            <h2 class="section-title">O nás</h2>
-            <p class="section-subtitle">Kdo jsme a co děláme</p>
+            <h2 class="section-title">O&nbsp;nás</h2>
+            <p class="section-subtitle">Profesionální autoservis s&nbsp;osobním přístupem</p>
             <div class="about-grid">
                 <div class="about-text">
-                    <p>Jsme tým profesionálů s dlouholetými zkušenostmi v oboru. Naším cílem je poskytovat služby nejvyšší kvality a budovat dlouhodobé vztahy s klienty.</p>
-                    <p>Věříme, že úspěch je postaven na důvěře, kvalitě a spolehlivosti. Proto ke každému projektu přistupujeme individuálně a s maximálním nasazením.</p>
+                    <p>Společnost byla založena v&nbsp;roce 2013 a&nbsp;za dobu svého působení si získala svým vstřícným jednáním a&nbsp;zodpovědným přístupem k&nbsp;práci spokojené zákazníky po celém kraji Vysočina.</p>
+                    <p>Náš tým kombinuje profesionální expertízu s&nbsp;vášní pro automobily. Specializujeme se na expresní opravy — jsme jediný rychloservis v&nbsp;Pelhřimově, většinu služeb provádíme na počkání.</p>
                     <div class="about-stats">
                         <div class="stat">
-                            <span class="stat-number" data-count="10" data-suffix="+">0</span>
+                            <span class="stat-number" data-count="13" data-suffix="+">0</span>
                             <span class="stat-label">let zkušeností</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-number" data-count="500" data-suffix="+">0</span>
-                            <span class="stat-label">spokojených klientů</span>
+                            <span class="stat-number" data-count="66" data-suffix="">0</span>
+                            <span class="stat-label">Google hodnocení</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-number" data-count="100" data-suffix="%">0</span>
-                            <span class="stat-label">spokojenost</span>
+                            <span class="stat-number" data-count="4" data-suffix=".2★">0</span>
+                            <span class="stat-label">průměrné hodnocení</span>
                         </div>
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="https://placehold.co/600x400/6366f1/ffffff?text=O+n%C3%A1s" alt="O nás" loading="lazy" width="600" height="400">
+                    <img src="img/about-mechanic.jpg" alt="Profesionální autoservis Pelhřimov" loading="lazy" width="800" height="600">
                 </div>
             </div>
         </div>
@@ -128,92 +149,100 @@
     <section class="section section-dark" id="sluzby">
         <div class="container">
             <h2 class="section-title">Naše služby</h2>
-            <p class="section-subtitle">Co pro vás můžeme udělat</p>
+            <p class="section-subtitle">Kompletní péče o&nbsp;vaše vozidlo na jednom místě</p>
             <div class="services-grid">
                 <div class="service-card" data-animate>
                     <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
                     </div>
-                    <h3>Konzultace</h3>
-                    <p>Individuální přístup ke každému klientovi. Poradíme vám s nejlepším řešením pro vaše potřeby.</p>
+                    <h3>Expresní opravy</h3>
+                    <p>Rychloservis na počkání — diagnostika, opravy i&nbsp;výměny. Většinu závad vyřešíme tentýž den.</p>
                 </div>
                 <div class="service-card" data-animate>
                     <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M16 12l-4-4-4 4M12 16V8"/></svg>
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
                     </div>
-                    <h3>Realizace</h3>
-                    <p>Profesionální provedení s důrazem na kvalitu a dodržení termínů. Každý projekt dovedeme do konce.</p>
+                    <h3>Pneuservis a&nbsp;geometrie</h3>
+                    <p>Kompletní pneuservis, přezutí, vyvážení kol a&nbsp;přesná geometrie náprav pro plynulou jízdu.</p>
+                </div>
+                <div class="service-card" data-animate>
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                    </div>
+                    <h3>Karosářské a&nbsp;lakýrnické práce</h3>
+                    <p>Opravy karoserií, lakování, vyřízení pojistných událostí na klíč a&nbsp;výměna autoskel.</p>
+                </div>
+                <div class="service-card" data-animate>
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+                    </div>
+                    <h3>Servis všech značek</h3>
+                    <p>Osobní i&nbsp;užitková vozidla všech značek. Výměna olejů, filtrů, brzdových destiček a&nbsp;kompletní údržba.</p>
                 </div>
                 <div class="service-card" data-animate>
                     <div class="service-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
                     </div>
-                    <h3>Podpora</h3>
-                    <p>Dlouhodobá péče o vaše projekty. Jsme tu pro vás i po dokončení zakázky.</p>
+                    <h3>Příprava na STK a&nbsp;emise</h3>
+                    <p>Kompletní příprava vozu na technickou kontrolu a&nbsp;měření emisí. Hlídáme za vás termíny pravidelných kontrol.</p>
                 </div>
                 <div class="service-card" data-animate>
                     <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                     </div>
-                    <h3>Digitalizace</h3>
-                    <p>Moderní řešení pro vaše podnikání. Pomůžeme vám využít technologie naplno.</p>
+                    <h3>Zabezpečení a&nbsp;příslušenství</h3>
+                    <p>Montáž tažného zařízení, zabezpečovacích systémů, příslušenství a&nbsp;podvozková konzervace.</p>
                 </div>
-                <div class="service-card" data-animate>
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
-                    </div>
-                    <h3>Školení</h3>
-                    <p>Vzdělávací programy pro vaše zaměstnance. Investice do znalostí se vždy vyplatí.</p>
-                </div>
-                <div class="service-card" data-animate>
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0022 16z"/></svg>
-                    </div>
-                    <h3>Strategie</h3>
-                    <p>Pomůžeme vám naplánovat růst a dosáhnout vašich obchodních cílů.</p>
-                </div>
+            </div>
+            <div class="services-more">
+                <p>A&nbsp;další služby: servis klimatizace, čištění interiéru, cenové kalkulace oprav, odvoz a&nbsp;přistavení vozidla po opravě.</p>
+                <a href="tel:+420606389116" class="btn btn-outline">Zavolejte nám pro cenovou nabídku</a>
             </div>
         </div>
     </section>
 
-    <!-- ═══ PORTFOLIO ═══ -->
-    <section class="section" id="portfolio">
+    <!-- ═══ GALERIE ═══ -->
+    <section class="section" id="galerie">
         <div class="container">
-            <h2 class="section-title">Portfolio</h2>
-            <p class="section-subtitle">Ukázky naší práce</p>
-            <div class="portfolio-grid">
-                <div class="portfolio-card" data-animate>
-                    <img src="https://placehold.co/600x400/6366f1/ffffff?text=Projekt+1" alt="Projekt 1" loading="lazy" width="600" height="400">
-                    <div class="portfolio-info">
-                        <h3>Projekt 1</h3>
-                        <p>Popis projektu a dosažených výsledků pro klienta.</p>
-                    </div>
+            <h2 class="section-title">Galerie</h2>
+            <p class="section-subtitle">Nahlédněte do naší dílny</p>
+            <div class="gallery-grid">
+                <div class="gallery-card" data-animate>
+                    <img src="img/photo-1.jpg" alt="Vybavení autoservisu" loading="lazy" width="600" height="400">
                 </div>
-                <div class="portfolio-card" data-animate>
-                    <img src="https://placehold.co/600x400/818cf8/ffffff?text=Projekt+2" alt="Projekt 2" loading="lazy" width="600" height="400">
-                    <div class="portfolio-info">
-                        <h3>Projekt 2</h3>
-                        <p>Popis projektu a dosažených výsledků pro klienta.</p>
-                    </div>
+                <div class="gallery-card" data-animate>
+                    <img src="img/photo-2.jpg" alt="Autoservis dílna" loading="lazy" width="600" height="400">
                 </div>
-                <div class="portfolio-card" data-animate>
-                    <img src="https://placehold.co/600x400/a5b4fc/1e1b4b?text=Projekt+3" alt="Projekt 3" loading="lazy" width="600" height="400">
-                    <div class="portfolio-info">
-                        <h3>Projekt 3</h3>
-                        <p>Popis projektu a dosažených výsledků pro klienta.</p>
-                    </div>
+                <div class="gallery-card" data-animate>
+                    <img src="img/photo-3.jpg" alt="Servisní pracoviště" loading="lazy" width="600" height="400">
+                </div>
+                <div class="gallery-card" data-animate>
+                    <img src="img/photo-4.jpg" alt="Servisní hala" loading="lazy" width="600" height="400">
+                </div>
+                <div class="gallery-card" data-animate>
+                    <img src="img/photo-5.jpg" alt="Dílenské prostory" loading="lazy" width="600" height="400">
+                </div>
+                <div class="gallery-card" data-animate>
+                    <img src="img/photo-6.jpg" alt="Servisní vybavení" loading="lazy" width="600" height="400">
+                </div>
+                <div class="gallery-card" data-animate>
+                    <img src="img/photo-7.jpg" alt="Dílna autoservisu" loading="lazy" width="600" height="400">
+                </div>
+                <div class="gallery-card" data-animate>
+                    <img src="img/photo-8.jpg" alt="Servisované vozidlo" loading="lazy" width="600" height="400">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ═══ FAQ ═══ -->
-
-    <!-- RECENZE -->
+    <!-- ═══ RECENZE ═══ -->
     <section class="section section-alt" id="recenze">
         <div class="container">
-            <h2 class="section-title">Co o nas rikaji klienti</h2>
-            <p class="section-subtitle">Recenze nasich spokojenych zakazniku</p>
+            <h2 class="section-title">Co o&nbsp;nás říkají zákazníci</h2>
+            <div class="reviews-badge">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <strong>4.2</strong> z&nbsp;5 — <span>66 hodnocení na Google Maps</span>
+            </div>
             <div class="reviews-grid">
                 <div class="review-card" data-animate>
                     <div class="review-stars">
@@ -223,10 +252,10 @@
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                     </div>
-                    <p class="review-text">Skvela spoluprace od zacatku do konce. Profesionalni pristup a vysledek predcil nase ocekavani. Jednoznacne doporucujeme.</p>
+                    <p class="review-text">Byla jsem na cestě do Pelhřimova, když jsem si způsobila závadu vlastní vinou, která musela být okamžitě řešena. Z&nbsp;autoservisu se mi do 5&nbsp;min ozvali zpátky a&nbsp;řekli ať auto dovezu ihned. Za hodinu jsem měla tu část auta nejen opravenou, ale i&nbsp;pročištěnou a&nbsp;mě spadl obrovský kámen ze srdce.</p>
                     <div class="review-author">
-                        <strong>Jan N.</strong>
-                        <span>Spokojeny zakaznik</span>
+                        <strong>Terka Menclová</strong>
+                        <span>před 3&nbsp;měsíci</span>
                     </div>
                 </div>
                 <div class="review-card" data-animate>
@@ -237,10 +266,10 @@
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                     </div>
-                    <p class="review-text">Rychle, kvalitne a za rozumnou cenu. Komunikace byla bezproblemova a vysledek odpovidal tomu, co jsme si predstavovali.</p>
+                    <p class="review-text">Včera ráno jsem nenastartoval a&nbsp;potřeboval jsem řešit rychle opravu, protože musím jezdit služebně do Prahy a&nbsp;vozit dítě. Naštěstí jsem kontaktoval pana majitele, který mne zachránil, protože si udělali na mne čas včas. Super komunikace, šikovný mechanik, i&nbsp;cena.</p>
                     <div class="review-author">
-                        <strong>Petra K.</strong>
-                        <span>Pravidelna zakaznice</span>
+                        <strong>Josef Myslivec</strong>
+                        <span>před 5&nbsp;měsíci</span>
                     </div>
                 </div>
                 <div class="review-card" data-animate>
@@ -251,40 +280,69 @@
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                     </div>
-                    <p class="review-text">Vse probehlo naprosto hladce a v dohodnutem terminu. Jsme velmi spokojeni a rozhodne se obratim znovu.</p>
+                    <p class="review-text">Za mě naprostá paráda. Byli jsme s&nbsp;rodinkou na cestě z&nbsp;Tábora na Jihlavu, když jsme měli poruchu. Sotva jsme dojeli k&nbsp;servisu. Když jsem přišel požádat o&nbsp;pomoc, chlapy neváhali a&nbsp;okamžitě se dali do díla. Nikdy jim to nezapomenu.</p>
                     <div class="review-author">
-                        <strong>Martin D.</strong>
-                        <span>Spokojeny zakaznik</span>
+                        <strong>Jakub Slavik</strong>
+                        <span>před měsícem</span>
+                    </div>
+                </div>
+                <div class="review-card" data-animate>
+                    <div class="review-stars">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="review-text">Objevily se mi při jízdě drobné vibrace celého auta. Těžko zjistitelná příčina. Přesto se jí důkladnou prohlídkou a&nbsp;hledáním příčiny podařilo vibrace odstranit. Ty byly způsobeny špatným vyvážením kol a&nbsp;rozhozenou geometrií. Celkově jsem velmi spokojen.</p>
+                    <div class="review-author">
+                        <strong>Martin Jůzl</strong>
+                        <span>před 4&nbsp;měsíci</span>
+                    </div>
+                </div>
+                <div class="review-card" data-animate>
+                    <div class="review-stars">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="review-text">Tenhle autoservis vřele doporučujeme. Mají milý a&nbsp;vstřícný přístup. Ochotně pomůžou. Za nás velký palec nahoru.</p>
+                    <div class="review-author">
+                        <strong>Ludmila Slavíková</strong>
+                        <span>před měsícem</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ═══ FAQ ═══ -->
     <section class="section section-dark" id="faq">
         <div class="container">
             <h2 class="section-title">Časté dotazy</h2>
             <p class="section-subtitle">Odpovědi na nejčastější otázky</p>
             <div class="faq-list">
                 <details class="faq-item" data-animate>
-                    <summary class="faq-question">Jaké služby nabízíte?</summary>
-                    <div class="faq-answer"><p>Nabízíme komplexní služby v našem oboru — od konzultací přes realizaci až po dlouhodobou podporu a servis.</p></div>
+                    <summary class="faq-question">Musím se objednat předem?</summary>
+                    <div class="faq-answer"><p>Jako rychloservis přijímáme zákazníky i&nbsp;bez objednání. Pro složitější opravy doporučujeme zavolat předem na <a href="tel:+420606389116">606&nbsp;389&nbsp;116</a>, abychom si na vás vyhradili čas.</p></div>
                 </details>
                 <details class="faq-item" data-animate>
-                    <summary class="faq-question">Jak dlouho trvá realizace?</summary>
-                    <div class="faq-answer"><p>Doba realizace závisí na rozsahu projektu. Standardní projekty zvládáme v řádu dnů až týdnů. Vždy vás o průběhu informujeme.</p></div>
+                    <summary class="faq-question">Opravujete všechny značky aut?</summary>
+                    <div class="faq-answer"><p>Ano, opravujeme osobní i&nbsp;užitková vozidla všech značek. Zvládneme také nákladní dopravu a&nbsp;motocykly.</p></div>
                 </details>
                 <details class="faq-item" data-animate>
-                    <summary class="faq-question">Jaké jsou vaše ceny?</summary>
-                    <div class="faq-answer"><p>Ceny jsou individuální podle rozsahu projektu. Kontaktujte nás pro nezávaznou cenovou nabídku — rádi vám ji připravíme.</p></div>
+                    <summary class="faq-question">Pomůžete mi s&nbsp;vyřízením pojistné události?</summary>
+                    <div class="faq-answer"><p>Samozřejmě. Vyřízení pojistných událostí nabízíme na klíč — od dokumentace poškození přes komunikaci s&nbsp;pojišťovnou až po kompletní opravu.</p></div>
                 </details>
                 <details class="faq-item" data-animate>
-                    <summary class="faq-question">Nabízíte záruku na své služby?</summary>
-                    <div class="faq-answer"><p>Ano, na všechny naše služby poskytujeme záruku. Vaše spokojenost je pro nás prioritou.</p></div>
+                    <summary class="faq-question">Jaká je vaše otevírací doba?</summary>
+                    <div class="faq-answer"><p>Jsme tu pro vás pondělí až pátek od 7:00 do 15:30. O&nbsp;víkendech pracujeme po dohodě — stačí zavolat.</p></div>
                 </details>
                 <details class="faq-item" data-animate>
-                    <summary class="faq-question">Působíte i mimo váš region?</summary>
-                    <div class="faq-answer"><p>Ano, poskytujeme služby po celé České republice. Pro vzdálené klienty nabízíme online konzultace.</p></div>
+                    <summary class="faq-question">Nabízíte odvoz vozidla po opravě?</summary>
+                    <div class="faq-answer"><p>Ano, zajistíme odvoz i&nbsp;přistavení vozidla po opravě. Domluvíme se na podmínkách individuálně.</p></div>
                 </details>
             </div>
         </div>
@@ -294,9 +352,16 @@
     <section class="section" id="kontakt">
         <div class="container">
             <h2 class="section-title">Kontakt</h2>
-            <p class="section-subtitle">Ozvěte se nám</p>
+            <p class="section-subtitle">Přijeďte, zavolejte nebo napište</p>
             <div class="contact-grid">
                 <div class="contact-info">
+                    <div class="contact-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        <div>
+                            <strong>Telefon</strong>
+                            <a href="tel:+420606389116">+420 606&nbsp;389&nbsp;116</a>
+                        </div>
+                    </div>
                     <div class="contact-item">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
                         <div>
@@ -305,21 +370,29 @@
                         </div>
                     </div>
                     <div class="contact-item">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-                        <div>
-                            <strong>Telefon</strong>
-                            <a href="tel:+420 606 389 116">+420 606 389 116</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
                         <div>
                             <strong>Adresa</strong>
-                            <span>Česká republika</span>
+                            <span>Nádražní 652, Pelhřimov 393&nbsp;01</span>
                         </div>
                     </div>
+                    <div class="contact-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        <div>
+                            <strong>Otevírací doba</strong>
+                            <span>Po–Pá: 7:00 – 15:30</span>
+                            <span class="contact-note">So–Ne: dle dohody</span>
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <a href="https://maps.google.com/?cid=5687577743439231713" target="_blank" rel="noopener" class="btn btn-outline btn-map">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Zobrazit na mapě
+                        </a>
+                    </div>
                 </div>
-                <form class="contact-form" data-wz-contact>
+                <form class="contact-form" data-netlify="true" name="demo-kontakt" data-wz-contact>
+                    <input type="hidden" name="bot-field">
                     <div class="form-group">
                         <label for="name">Jméno</label>
                         <input type="text" id="name" name="name" required placeholder="Vaše jméno">
@@ -334,7 +407,7 @@
                     </div>
                     <div class="form-group">
                         <label for="message">Zpráva</label>
-                        <textarea id="message" name="message" rows="5" required placeholder="Jak vám můžeme pomoci?"></textarea>
+                        <textarea id="message" name="message" rows="5" required placeholder="Popište, s čím vám můžeme pomoci..."></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary btn-full">Odeslat zprávu</button>
                 </form>
@@ -348,12 +421,13 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <strong>Autoservis Pelhřimov — Jan Daňhel</strong>
-                    <p>Opravy automobilů</p>
+                    <p>Nádražní 652, Pelhřimov 393&nbsp;01 · IČO: 05943019</p>
                 </div>
                 <div class="footer-links">
-                    <a href="#o-nas">O nás</a>
+                    <a href="#o-nas">O&nbsp;nás</a>
                     <a href="#sluzby">Služby</a>
-                    <a href="#portfolio">Portfolio</a>
+                    <a href="#galerie">Galerie</a>
+                    <a href="#recenze">Recenze</a>
                     <a href="#kontakt">Kontakt</a>
                 </div>
             </div>
@@ -375,7 +449,6 @@
             <button class="btn btn-small btn-outline" id="cookie-reject">Odmítnout</button>
         </div>
     </div>
-
 
     <!-- ═══ SCROLL TO TOP ═══ -->
     <button class="scroll-top" id="scroll-top" aria-label="Nahoru">

@@ -563,3 +563,99 @@ a:focus-visible {
 .portfolio-card { overflow: hidden; }
 .portfolio-card img { transition: transform 0.5s ease; }
 .portfolio-card:hover img { transform: scale(1.08); }
+
+/* ═══ NAV LOGO IMAGE ═══ */
+.nav-logo-img {
+    height: 36px;
+    width: auto;
+    display: block;
+}
+[data-theme="dark"] .nav-logo-img {
+    filter: brightness(1.3) contrast(1.1);
+}
+@media (max-width: 768px) {
+    .nav-logo-img { height: 28px; }
+}
+
+/* ═══ SECTION ALT ═══ */
+.section-alt { background: var(--bg-alt); }
+
+/* ═══ GALLERY ═══ */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+.gallery-card {
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all var(--transition);
+}
+.gallery-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+.gallery-card img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.gallery-card:hover img {
+    transform: scale(1.08);
+}
+@media (max-width: 1024px) {
+    .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 768px) {
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+    .gallery-grid { grid-template-columns: 1fr; }
+}
+
+/* ═══ REVIEWS BADGE ═══ */
+.reviews-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    color: var(--text-muted);
+}
+.reviews-badge strong {
+    font-size: 1.4rem;
+    color: var(--text);
+}
+.reviews-badge svg {
+    flex-shrink: 0;
+}
+
+/* ═══ SERVICES MORE ═══ */
+.services-more {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 1px solid rgba(99, 102, 241, 0.15);
+}
+.services-more p {
+    color: var(--text-dark-muted);
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+/* ═══ CONTACT EXTRAS ═══ */
+.contact-note {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    opacity: 0.8;
+}
+.contact-map {
+    margin-top: 8px;
+}
+.btn-map {
+    gap: 8px;
+}
