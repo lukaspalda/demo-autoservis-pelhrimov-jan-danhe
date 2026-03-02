@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://https://wz-demo-autoservis-pelhrimov-jan-danhe.netlify.app/sitemap.xml
