@@ -45,6 +45,9 @@
     --shadow-lg: 0 12px 32px rgba(99, 102, 241, 0.12);
     --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.06);
 
+    /* Border radius */
+    --radius: 16px;
+
     /* Glows */
     --glow-button: 0 8px 24px rgba(99, 102, 241, 0.35);
     --glow-button-sm: 0 0 20px rgba(99, 102, 241, 0.15);
@@ -658,4 +661,17 @@ a:focus-visible {
 }
 .btn-map {
     gap: 8px;
+}
+.contact-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-map-embed {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+.contact-map-embed iframe {
+    display: block;
 }
