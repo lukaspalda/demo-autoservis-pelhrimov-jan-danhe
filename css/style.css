@@ -83,20 +83,20 @@ a:hover { color: var(--primary-hover); }
 }
 .nav-container { display: flex; align-items: center; justify-content: space-between; }
 
-/* Logo image — white on dark hero, normal on scrolled */
+/* Logo — swap white/dark version on scroll */
 .nav-logo { display: flex; align-items: center; }
-.nav-logo-img {
-    height: 36px; width: auto; transition: filter var(--transition);
-    filter: brightness(0) invert(1); /* white on dark hero */
-}
-.navbar.scrolled .nav-logo-img { filter: none; /* original colors when scrolled */ }
+.nav-logo-img { height: 36px; width: auto; }
+.nav-logo-dark { display: none; }
+.nav-logo-light { display: block; }
+.navbar.scrolled .nav-logo-dark, .navbar.menu-open .nav-logo-dark { display: block; }
+.navbar.scrolled .nav-logo-light, .navbar.menu-open .nav-logo-light { display: none; }
 
 /* Nav links — light on dark hero, dark on scrolled */
 .nav-menu { display: flex; list-style: none; gap: 32px; }
 .nav-link { color: rgba(255,255,255,0.8); font-weight: 500; font-size: 0.95rem; transition: color var(--transition); }
 .nav-link:hover { color: #fff; }
-.navbar.scrolled .nav-link { color: var(--text-muted); }
-.navbar.scrolled .nav-link:hover { color: var(--primary); }
+.navbar.scrolled .nav-link, .navbar.menu-open .nav-link { color: var(--text-muted); }
+.navbar.scrolled .nav-link:hover, .navbar.menu-open .nav-link:hover { color: var(--primary); }
 .nav-actions { display: flex; align-items: center; gap: 8px; }
 
 /* Hamburger — white on dark, dark on scrolled */
@@ -105,7 +105,7 @@ a:hover { color: var(--primary-hover); }
     background: none; border: none; cursor: pointer; padding: 8px;
 }
 .nav-toggle span { display: block; width: 24px; height: 2px; background: #fff; transition: all var(--transition); border-radius: 2px; }
-.navbar.scrolled .nav-toggle span { background: var(--text); }
+.navbar.scrolled .nav-toggle span, .navbar.menu-open .nav-toggle span { background: var(--text); }
 .nav-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
 .nav-toggle.active span:nth-child(2) { opacity: 0; }
 .nav-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }

@@ -1,24 +1,31 @@
 (function() {
     'use strict';
 
+    // ── Sticky Navbar ──
+    var navbar = document.getElementById('navbar');
+
     // ── Mobile Menu ──
     var navToggle = document.getElementById('nav-toggle');
     var navMenu = document.getElementById('nav-menu');
     if (navToggle && navMenu) {
         navToggle.addEventListener('click', function() {
-            navMenu.classList.toggle('active');
+            var isOpen = navMenu.classList.toggle('active');
             navToggle.classList.toggle('active');
+            // On mobile, force scrolled look when menu is open (dark logo + dark links)
+            if (navbar && isOpen && window.scrollY <= 50) {
+                navbar.classList.add('menu-open');
+            } else if (navbar) {
+                navbar.classList.remove('menu-open');
+            }
         });
         navMenu.querySelectorAll('.nav-link').forEach(function(link) {
             link.addEventListener('click', function() {
                 navMenu.classList.remove('active');
                 navToggle.classList.remove('active');
+                if (navbar) navbar.classList.remove('menu-open');
             });
         });
     }
-
-    // ── Sticky Navbar ──
-    var navbar = document.getElementById('navbar');
     if (navbar) {
         window.addEventListener('scroll', function() {
             navbar.classList.toggle('scrolled', window.scrollY > 50);
